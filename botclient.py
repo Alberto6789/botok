@@ -26,7 +26,7 @@ from config import*
 api_id = 10181262  #api id
 api_hash = "f52b5a057b73b9974eaa7403e04907f0" #api hash
 bot_token = Tokenconf
-global_token = "3d68b9104180a3f55f21fb141b144632" #Aqui el token de la uclv
+global_token = "1eaa6681006078ad623bcbef8a4e7fec" #Aqui el token de la uclv
 
 CONFIGS = {}
 OWNER = ["JAGB2021"]
