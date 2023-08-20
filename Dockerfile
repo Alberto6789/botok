@@ -1,12 +1,8 @@
-FROM python:3.9-slim-bullseye
+FROM python:3.7.13
 
-WORKDIR /app/
-COPY . .
+RUN apt-get update && apt-get install --yes pipenv
+WORKDIR /usr/src/app
 
-RUN pip3 install -r requirements.txt
-
-RUN apt update; apt-get install -yy apache2
-
-CMD ["bash","run.sh"]
-
-EXPOSE 10000
+COPY ./ /usr/src/app/
+RUN pipenv install --deploy --ignore-pipfile
+CMD pipenv run python main.py
