@@ -6,3 +6,5 @@ WORKDIR /usr/src/app
 COPY ./ /usr/src/app/
 RUN pipenv install --deploy --ignore-pipfile
 CMD pipenv run python botclient.py
+HOST 0.0.0.0
+PORT 10000
