@@ -1,6 +1,6 @@
-﻿from telethon import TelegramClient as Client
-from telethon import events
-from telethon import Button
+﻿from pyrogram import TelegramClient as Client
+from pyrogram import events
+from pyrogram import Button
 
 import aiohttp
 import aiofiles
